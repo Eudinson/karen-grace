@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 130px;
-        gap: 50px;
+        gap: 20px;
 
         .karen-grace {
             color: #fff;
@@ -22,6 +22,39 @@
             color: #fff;
             font-weight: 700;
             font-size: 130px;
+            margin-bottom: 50px;
+        }
+
+        .btn-ask-qoute-container {
+            display: flex;
+            width: 300px;
+            cursor: pointer;
+
+            .btn-ask-quote {
+                border: none;
+                background: transparent;
+                border: 1px solid #fff;
+                padding: 20px;
+                outline: none;
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+                width: 70%;
+                cursor: pointer;
+            }
+
+            .arrow-icon {
+                background-color: #fff;
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .right-arrow {
+                    height: 30px;
+                }
+            }
         }
     }
 }
