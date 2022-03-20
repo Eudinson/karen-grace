@@ -1,13 +1,15 @@
-import './App.css';
-import logo from './assets/instagram.png'
+import Header from "./components/header/Header";
+import Home from "./components/home/Home";
+
+import './app.scss';
 
 const App = () => {
-  return(
-    <>
-      <p className='header-1'>Coming soon</p>
-      <img className='camera-icon' src={logo} alt="camera" />
-      <p className='header-2'>Karen Grace Photography</p>
-    </>
+
+  return (
+    <div className="container">
+      <Header />
+      <Home />
+    </div>
   )
 }
 

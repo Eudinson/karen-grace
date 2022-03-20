@@ -1,0 +1,27 @@
+.home-container {
+    padding-top: 100px;
+    display: flex;
+    position: relative;
+
+    .home-sub-container {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 130px;
+        gap: 50px;
+
+        .karen-grace {
+            color: #fff;
+            font-weight: 400;
+            font-size: 50px;
+        }
+
+        .photography {
+            color: #fff;
+            font-weight: 700;
+            font-size: 130px;
+        }
+    }
+}
