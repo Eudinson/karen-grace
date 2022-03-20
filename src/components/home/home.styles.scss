@@ -15,19 +15,19 @@
         .karen-grace {
             color: #fff;
             font-weight: 400;
-            font-size: 50px;
+            font-size: 4rem;
         }
 
         .photography {
             color: #fff;
             font-weight: 700;
-            font-size: 130px;
+            font-size: 10rem;
             margin-bottom: 50px;
         }
 
         .btn-ask-qoute-container {
             display: flex;
-            width: 300px;
+            width: 280px;
             cursor: pointer;
 
             .btn-ask-quote {
@@ -37,7 +37,8 @@
                 padding: 20px;
                 outline: none;
                 color: #fff;
-                font-size: 20px;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
                 text-transform: uppercase;
                 width: 70%;
                 cursor: pointer;
@@ -52,7 +53,62 @@
                 justify-content: center;
 
                 .right-arrow {
-                    height: 30px;
+                    height: 2.5rem;
+                }
+
+               
+            }
+
+            &:hover .right-arrow {
+                animation: slide-in .5s linear;
+            }
+        }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translate(-20px);
+    }
+
+    100% {
+        opacity: 100%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .home-container {
+
+        .home-sub-container {
+            padding: 0 20px;
+
+            .karen-grace {
+                font-size: 2rem;
+            }
+
+            .photography {
+                font-size: 5rem;
+            }
+
+            .btn-ask-qoute-container {
+                width: 180px;
+    
+                .btn-ask-quote {
+                    padding: 15px;
+                    font-size: 1.2rem;
+                }
+    
+                .arrow-icon {
+    
+                    .right-arrow {
+                        height: 2rem;
+                    }
+                }
+    
+                &:hover .right-arrow {
+                    animation: slide-in .5s linear;
                 }
             }
         }

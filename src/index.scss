@@ -1,12 +1,19 @@
-*{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     background: url('./assets/woman-image.jpg');
     background-position: center;
     background-size: cover;

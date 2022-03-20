@@ -1,33 +1,46 @@
+import { useState } from 'react';
 import './header.styles.scss';
 import logoFrame from '../../assets/frame.png';
 
 const Header = () => {
 
-    return (
-        <div className='header-container'>
-            <div className='header-sub-container'>
-                <div className='logo-container'>
-                    <a href="#">
-                        <img src={logoFrame} alt="logo" className='logo'/>
-                    </a>
-                </div>
-                <label htmlFor="" >
-                    <a href="#" className='nav'>Home</a>
-                </label>
-                <label htmlFor="" >
-                    <a href="#" className='nav'>About</a>
-                </label>
-                <label htmlFor="" >
-                    <a href="#" className='nav'>Gallery</a>
-                </label>
-            </div>
-            <div className='header-sub-container'>
-                <label htmlFor="" >
-                    <a href="#" className='nav'>Contact</a>
-                </label>
-            </div>
+    const [open, setOpen] = useState(false)
 
-        </div>
+    const handleClick = () => {
+        setOpen(!open)
+    }
+
+    return (
+        <>
+            <div className={open ? 'header-container' : 'header-container position'}>
+                <div className='header-sub-container'>
+                    <div className='logo-container' onClick={handleClick}>
+                        <a href="#home">
+                            <img src={logoFrame} alt="logo" className='logo' />
+                        </a>
+                    </div>
+                    <label onClick={handleClick}>
+                        <a href="#home" className='nav'>Home</a>
+                    </label>
+                    <label onClick={handleClick}>
+                        <a href="#about" className='nav'>About</a>
+                    </label>
+                    <label onClick={handleClick}>
+                        <a href="#gallery" className='nav'>Gallery</a>
+                    </label>
+                </div>
+                <div className='header-sub-container'>
+                    <label onClick={handleClick}>
+                        <a href="#contact" className='nav'>Contact</a>
+                    </label>
+                </div>
+            </div>
+            <div className='burger-container' onClick={handleClick}>
+                <div className='line-1'></div>
+                <div className='line-2'></div>
+                <div className='line-3'></div>
+            </div>
+        </>
     )
 }
 
