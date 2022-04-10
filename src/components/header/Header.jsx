@@ -13,12 +13,12 @@ const Header = () => {
     return (
         <>
             <div className={open ? 'header-container' : 'header-container position'}>
-                <div className='header-sub-container'>
-                    <div className='logo-container' onClick={handleClick}>
+                <div className='logo-container' onClick={handleClick}>
                         <a href="#home">
                             <img src={logoFrame} alt="logo" className='logo' />
                         </a>
                     </div>
+                <div className='header-sub-container'>
                     <label onClick={handleClick}>
                         <a href="#home" className='nav'>Home</a>
                     </label>
@@ -28,8 +28,6 @@ const Header = () => {
                     <label onClick={handleClick}>
                         <a href="#gallery" className='nav'>Gallery</a>
                     </label>
-                </div>
-                <div className='header-sub-container'>
                     <label onClick={handleClick}>
                         <a href="#contact" className='nav'>Contact</a>
                     </label>

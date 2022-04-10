@@ -26,45 +26,48 @@
         }
 
         .btn-ask-qoute-container {
-            display: flex;
-            width: 280px;
-            cursor: pointer;
 
-            .btn-ask-quote {
-                border: none;
-                background: transparent;
-                border: 1px solid #fff;
-                padding: 20px;
-                outline: none;
-                color: #fff;
-                font-size: 1.5rem;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                width: 70%;
-                cursor: pointer;
-            }
-
-            .arrow-icon {
-                background-color: #fff;
-                width: 30%;
-                height: 100%;
+            a {
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                width: 280px;
+                cursor: pointer;
+                text-decoration: none;
 
-                .right-arrow {
-                    height: 2.5rem;
+                .btn-ask-quote {
+                    border: none;
+                    background: transparent;
+                    border: 1px solid #fff;
+                    padding: 20px;
+                    outline: none;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    width: 70%;
+                    cursor: pointer;
                 }
-
-               
-            }
-
-            &:hover .right-arrow {
-                animation: slide-in .5s linear;
+    
+                .arrow-icon {
+                    background-color: #fff;
+                    width: 30%;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .right-arrow {
+                        height: 2.5rem;
+                    }
+                }
+    
+                &:hover .right-arrow {
+                    animation: slide-in .5s linear;
+                }
             }
         }
     }
 }
+
 
 @keyframes slide-in {
     0% {
